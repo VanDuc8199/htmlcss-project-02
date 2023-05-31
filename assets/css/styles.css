@@ -76,6 +76,10 @@ a {
 .line-clamp.line-2 {
     --line-clamp: 2;
 }
+
+.break-all {
+    word-break: break-all;
+}
 /* ================= Header ============= */
 .fix-header {
     background: #fffcf4;
@@ -278,7 +282,7 @@ a {
 
 /* ================= Popular =================*/
 .popular {
-    margin: 135px;
+    margin: 135px 0;
     padding: 65px 0;
 }
 
@@ -362,6 +366,7 @@ a {
 }
 
 .course-item .info .title a {
+    padding-right: 8px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
@@ -406,4 +411,86 @@ a {
 
 .popular .foot .btn.btn-buy:hover {
     background: var(--primary-color);
+}
+
+/* ================= Feedback =================*/
+.feedback {
+    background: #2e2100;
+}
+
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
+.feedback .feedback-item {
+    padding: 96px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.feedback-item .info .avatar {
+    margin-bottom: 8px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-bottom: 4px;
+    font-family: var(--font-sen);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+}
+
+.feedback-item .info .desc {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+
+.feedback-item .info .dots {
+    display: flex;
+    margin-top: 28px;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.feedback-item .info .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+    transition: 0.3s;
+}
+
+.feedback-item .info .dot:first-child {
+    background: var(--primary-color);
+}
+
+.feedback-item .info .dot:active {
+    background: var(--primary-color);
+}
+
+.feedback-item .content .open-quotes {
+    margin-left: -30px;
+}
+
+.feedback-item .content {
+    width: 62%;
+}
+
+.feedback-item .content blockquote {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
 }
