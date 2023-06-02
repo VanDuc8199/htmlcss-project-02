@@ -80,6 +80,15 @@ a {
 .break-all {
     word-break: break-all;
 }
+
+.btn-feature {
+    min-width: 137px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FFB900;
+    border: hidden;
+}
 /* ================= Header ============= */
 .fix-header {
     background: #fffcf4;
@@ -282,8 +291,8 @@ a {
 
 /* ================= Popular =================*/
 .popular {
-    margin: 135px 0;
-    padding: 65px 0;
+    padding: 200px 0;
+    background: #E5E5E5;
 }
 
 .popular .popular-top {
@@ -373,7 +382,14 @@ a {
     color: #171100;
 }
 
+.course-item .info .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .course-item .info .value {
+    margin-left: 6px;
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.75;
@@ -493,4 +509,81 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* ================= Features ============= */
+.features {
+    background: #E5E5E5;;
+    padding: 200px 0;
+}
+
+.features .top-feature {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .top-feature .images {
+    display: flex;
+}
+
+.features .top-feature .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.features .top-feature .images img:first-child {
+    margin: 34px 30px 0 0;
+}
+
+.top-feature .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 130px;
+}
+
+/* .top-feature .content .heading {
+    margin-top: 58px;
+} */
+
+.top-feature .content .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+}
+
+.top-feature .content .btn {
+    margin-top: 32px;
+}
+
+.features .bottom-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.bottom-feature .desc {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5F5B53;
+}
+
+.bottom-feature .content .btn {
+    margin-top: 32px;
+}
+
+.bottom-feature .image img {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-left: 130px;
 }
