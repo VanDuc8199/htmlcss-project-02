@@ -42,6 +42,14 @@ body {
     line-height: 1.26;
 }
 
+.heading.lv3 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+
 .btn {
     display: inline-block;
     min-width: 118px;
@@ -711,4 +719,94 @@ a {
 .blog .main-content .dots .dot.active {
     background: var(--primary-color);
     cursor: default;
+}
+
+/* ================= Footer ============= */
+
+.footer {
+    background: #2e2100;
+}
+
+.footer .main-content {
+    padding: 96px 0 28px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .column:last-child {
+    width: 231px;
+}
+
+.row .column .desc {
+    margin: 18px 0;
+    width: 267px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+
+.row .column .socials {
+    display: flex;
+    gap: 0 18px;
+}
+
+.row .column .heading::after {
+    content: "";
+    position: relative;
+    top: 14px;
+    left: 0;
+    right: -26px;
+    display: block;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.row .column .list {
+    margin-top: 31px;
+}
+
+.row .column .list a {
+    display: inline-block;
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+    transition: 0.2s;
+}
+
+.row .column .list a:hover {
+    opacity: 0.8;
+}
+
+.row .column .list strong {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #ffffff;
+}
+
+.footer .coppy-right {
+    margin-top: 67px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+}
+
+.footer .coppy-right::before {
+    content: "";
+    position: relative;
+    top: -28px;
+    left: 0;
+    display: block;
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
 }
